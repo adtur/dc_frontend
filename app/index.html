@@ -1,25 +1,29 @@
-<!doctype html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Story - responsive landing page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="Twitter bootstrap theme">
+  <meta name="author" content="prettystrap">
 
-        <!-- Load bootstrap -->
-<!--         <link id="bootstrap-css-file" href="styles/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+  <!-- Load The Story -->
+  <link id="the-story-css-file"href="styles/the-story.min.css" rel="stylesheet" media="screen">
 
-        <!-- Load pixels -->
-        <link id="the-story-css-file" href="styles/the-story.min.css" rel="stylesheet" media="screen">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
 
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild --> 
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+  <meta http-equiv=X-UA-Compatible content=IE=edge>    
 </head>
-  <!-- activate scrollspy -->
-  <body ng-app="dcFrontendApp" id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
 
+<!-- activate scrollspy -->
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="navbar-container">
       <div class="navbar-header">
@@ -298,6 +302,14 @@
       </div>
     </div>
   </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+
+  <!-- JQUERY END -->
 
     <!-- Add your site or application content here -->
     <!-- <div class="container" ng-view=""> -->
@@ -316,11 +328,8 @@
        ga('send', 'pageview');
     </script>
 
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-
   <!-- Minimize in production. -->
-  
+
         <!-- build:js scripts/plugins.js -->
 <!--         // <script src="bower_components/bootstrap-sass/js/bootstrap-affix.js"></script>
         // <script src="bower_components/bootstrap-sass/js/bootstrap-alert.js"></script>
@@ -337,25 +346,30 @@
         // <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script> -->
         <!-- endbuild -->
 
-        <!-- build:js scripts/modules.js -->
-        <script src="bower_components/angular-resource/angular-resource.js"></script>
-        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-        <!-- endbuild -->
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/bootstrap.js"></script>     
-        <script src="scripts/lazyload.js"></script>
-        <script src="scripts/spin.js"></script>
-        <script src="scripts/bootstrap.js"></script>
-        <script src="scripts/lightbox.js"></script>
-        <script src="scripts/bootstrap.js"></script>
-        <script src="scripts/jquery.history.js"></script>
+  <script src="scripts/bootstrap.js"></script>
+ 
+  <script src="scripts/lazyload.js"></script>
+  <script src="scripts/spin.js"></script>
+  <script src="scripts/bootstrap.js"></script>
+  <script src="scripts/lightbox.js"></script>
+  <script src="scripts/bootstrap.js"></script>
+  <script src="scripts/jquery.history.js"></script>
 
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <!-- UI configuration -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+  <!-- build:js scripts/modules.js -->
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <!-- UI configuration -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+
 </body>
 </html>
