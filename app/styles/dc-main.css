@@ -8,3 +8,7 @@
   font-size: 0.8em;
   border-bottom: solid #ccc 1px;
 }
+
+.img-responsive {
+  margin: 0 auto;
+}
