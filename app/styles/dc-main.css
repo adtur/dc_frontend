@@ -1,0 +1,9 @@
+
+.pricing-box {
+  background-color: white;
+}
+
+.pricing-box-line {
+  font-size: 0.8em;
+  border-bottom: solid #ccc 1px;
+}
