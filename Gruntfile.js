@@ -293,6 +293,13 @@ module.exports = function (grunt) {
         src: '{,*/}*.css'
       }
     },
+    fonts: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/fonts',
+        dest: '.tmp/fonts/',
+        src: '{,*/}*.*'
+      }
+    },    
     concurrent: {
       server: [
         'coffee:dist',
