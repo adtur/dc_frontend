@@ -31,6 +31,11 @@ app.configure('production', function(){
 // Routes
 app.get('/api/awesomeThings', api.awesomeThings);
 
+app.post('/contact', function(req, res) {
+  console.log("mesa!");
+  res.redirect("/");
+});
+
 // Start server
 var port = process.env.PORT || 3000;
 app.listen(port, function () {

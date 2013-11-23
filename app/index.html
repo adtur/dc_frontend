@@ -175,10 +175,10 @@
     <div class="row inner-page contact">
       <div class="col-md-6 push-up">
         <h3>What's on your mind?</h3>
-        <form id="contact-form">
-          <textarea rows="6" class="form-control" placeholder="Your story"></textarea>
-          <input type="text" class="form-control" placeholder="your@e-mail.com">
-          <input type="text" class="form-control" placeholder="Name">
+        <form id="contact-form" method="post" action="/contact">
+          <textarea rows="6" class="form-control" placeholder="Your story" name="message[content]"></textarea>
+          <input type="text" class="form-control" placeholder="your@e-mail.com" name="message[address]">
+          <input type="text" class="form-control" placeholder="Name"name="message[name]">
           <button class="btn btn-primary btn-centered">Contact us</button>
         </form>
         <br />
