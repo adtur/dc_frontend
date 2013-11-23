@@ -2,15 +2,21 @@
 .pricing-box {
   background-color: white;
   margin-right: 5px;
+  padding-top: 10px;
 }
 
 .pricing-box-line {
-  font-size: 0.8em;
   border-bottom: solid #ccc 1px;
 }
 
+.pricing-box-item {
+  font-size: 0.8em;
+  /*border-bottom: solid #ccc 1px;*/
+}
+
+
 .img-responsive {
-  margin: 0 auto;
+  margin: 0 auto;   
 }
 
 .push-up {
@@ -24,4 +30,9 @@
           box-sizing: content-box;  
   height: 350px;
   width: 100%;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: -10px;
 }
