@@ -17,3 +17,11 @@
   padding-top: 0px;
   margin-top: -50px;
 }
+
+.overwrite-box {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;  
+  height: 350px;
+  width: 100%;
+}
