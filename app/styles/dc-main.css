@@ -36,3 +36,8 @@ hr {
   margin: 0;
   margin-bottom: -10px;
 }
+
+#mail-list-label {
+  padding: 8px;
+  font-size: 1.3em;
+}
