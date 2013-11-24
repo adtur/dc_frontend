@@ -34,12 +34,15 @@ app.configure('production', function(){
 app.get('/api/awesomeThings', api.awesomeThings);
 
 app.post('/contact', function(req, res) {
-  var name = req.body.message.name;
-  var address = req.body.message.address;
-  var content = req.body.message.content;
+  mailer.sendMail(
+    nodemailer,
+    req.body.message.name,
+    req.body.message.address,
+    req.body.message.content);
 
-  mailer.sendMail(nodemailer, name, address, content);  
-  res.redirect("/");
+  setTimeout(function() {
+    res.redirect("/");
+  }, 3000);
 });
 
 // Start server

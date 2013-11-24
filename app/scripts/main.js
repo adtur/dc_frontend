@@ -115,6 +115,6 @@ $(document).ready(function() {
     });
 
     $("#contact-form-button").click(function() {
-        alert("Your message has been send, you will hear from us very soon");
+        vex.dialog.alert("Your message has been send, you will hear from us very soon!");      
     });
 });
