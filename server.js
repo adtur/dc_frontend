@@ -5,6 +5,8 @@ var express = require('express'),
     path = require('path');
 
 var app = express();
+var nodemailer = require("nodemailer");
+var mailer = require("./lib/modules/mailer");
 
 // Controllers
 var api = require('./lib/controllers/api');
@@ -32,7 +34,11 @@ app.configure('production', function(){
 app.get('/api/awesomeThings', api.awesomeThings);
 
 app.post('/contact', function(req, res) {
-  console.log("mesa!");
+  var name = req.body.message.name;
+  var address = req.body.message.address;
+  var content = req.body.message.content;
+
+  mailer.sendMail(nodemailer, name, address, content);  
   res.redirect("/");
 });
 

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // Add spin.js to lazy load container
+  // Add spin.js to lazy load container
   // History, and back button
 
   $(function() {
@@ -112,5 +112,9 @@ $(document).ready(function() {
     $('.nav .scroll').click(function(e) {
         if ($('.navbar-toggle').is(":visible"))
         $("#nav-collapse").removeClass("in").addClass("collapse");
+    });
+
+    $("#contact-form-button").click(function() {
+        alert("Your message has been send, you will hear from us very soon");
     });
 });
