@@ -89,7 +89,7 @@ $(document).ready(function() {
     $('.scroll[href^="#"]').bind('click.smoothscroll', function(e) {
         e.preventDefault();
         var target = this.hash;
-        $target = $(target);
+        var $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
         }, 900, 'swing', function() {
