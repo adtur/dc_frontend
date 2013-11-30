@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "express": "~3.4.3",
-    "nodemailer": "latest"
+    "nodemailer": "latest",
+    "orm": "2.1.3"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
