@@ -45,6 +45,8 @@ app.post('/contact', function(req, res) {
   }, 3000);
 });
 
+app.use(express.static(__dirname + "/public"));
+
 // Start server
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
