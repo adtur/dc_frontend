@@ -84,8 +84,9 @@ app.get('/getyourguide', function(req, res) {
               '<title>Get Your Guide deeplinks</title>' +
             '</head>' +
             '<body>' +
-              '<h3><a href="http://deeplink.me/getyourguide.com/dubai-l173/dubai-skyscraper-burj-khalifa-entrance-ticket-t25873/">Dubai: Burj Khalifa Skyscraper Entrance Ticket</a></h3>' +
+              '<h3><a href="http://sparq.it/44w/">sparq.it -- Dubai: Burj Khalifa Skyscraper Entrance Ticket</a></h3>' +
               '<br />' +
+              '<h3><a href="http://deeplink.me/getyourguide.com/dubai-l173/dubai-skyscraper-burj-khalifa-entrance-ticket-t25873/">deeplink.mde -- Dubai: Burj Khalifa Skyscraper Entrance Ticket</a></h3>' +
             '</body>' +
             '</html>');
 });
