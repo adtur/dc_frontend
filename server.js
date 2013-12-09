@@ -81,7 +81,7 @@ app.get('/getyourguide', function(req, res) {
   res.send('<!DOCTYPE html> ' +
            '<html lang="en">' +
            '<head>' +
-              '<title>zalando deeplinks</title>' +
+              '<title>Get Your Guide deeplinks</title>' +
             '</head>' +
             '<body>' +
               '<h3><a href="http://deeplink.me/http://www.getyourguide.com/dubai-l173/dubai-skyscraper-burj-khalifa-entrance-ticket-t25873/">Dubai: Burj Khalifa Skyscraper Entrance Ticket</a></h3>' +
