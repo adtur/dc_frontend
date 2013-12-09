@@ -27,7 +27,7 @@ app.configure('development', function(){
 
 app.configure('production', function(){
   app.use(express.favicon(path.join(__dirname, 'public/favicon.ico')));
-  app.use(express.static(path.join(__dirname, 'public')));
+  app.use(express.static(__dirname + '/public'));
 });
 
 // Routes
@@ -45,7 +45,50 @@ app.post('/contact', function(req, res) {
   }, 3000);
 });
 
-app.use(express.static(__dirname + "/public"));
+app.get('/deeplinks', function(req, res) {
+  res.send('<!DOCTYPE html> ' +
+           '<html lang="en">' +
+           '<head>' +
+              '<title>deeplink me kerel :P</title>' +
+            '</head>' +
+            '<body>' +
+              '<a href="http://sparq.it/1lm">ebay</a>' +
+              '<br />' +
+              '<a href="http://sparq.it/1xq">etsy</a>' +
+              '<br />' +
+              '<a href="http://sparq.it/392">tumblr</a>' +
+            '</body>' +
+            '</html>');
+});
+
+app.get('/zalando', function(req, res) {
+  res.send('<!DOCTYPE html> ' +
+           '<html lang="en">' +
+           '<head>' +
+              '<title>zalando deeplinks</title>' +
+            '</head>' +
+            '<body>' +
+              '<h3><a href="http://deeplink.me/zalando.de/lloyd-florenz-business-schnuerer-schwarz-ll112a053-802.html">FLORENZ - Business-Schnürer - schwarz</a></h3>' +
+              '<br />' +
+              '<h3><a href="http://deeplink.me/zalando.de/hugo-heise-anzug-schwarz-hu722m002-802.html">HEISE - Anzug - schwarz</a></h3>' +
+              '<br />' +
+              '<h3><a href="http://deeplink.me/zalando.de/polo-ralph-lauren-slim-fit-poloshirt-heather-po222d05p-102.html">SLIM FIT - Poloshirt - heather</a></h3>' +
+            '</body>' +
+            '</html>');
+});
+
+app.get('/getyourguide', function(req, res) {
+  res.send('<!DOCTYPE html> ' +
+           '<html lang="en">' +
+           '<head>' +
+              '<title>zalando deeplinks</title>' +
+            '</head>' +
+            '<body>' +
+              '<h3><a href="http://deeplink.me/http://www.getyourguide.com/dubai-l173/dubai-skyscraper-burj-khalifa-entrance-ticket-t25873/">Dubai: Burj Khalifa Skyscraper Entrance Ticket</a></h3>' +
+              '<br />' +
+            '</body>' +
+            '</html>');
+});
 
 // Start server
 var port = process.env.PORT || 3000;
