@@ -27,7 +27,7 @@ app.configure('development', function(){
 
 app.configure('production', function(){
   app.use(express.favicon(path.join(__dirname, 'public/favicon.ico')));
-  app.use(express.static(__dirname + '/public'));
+  app.use(express.static(path.join(__dirname, 'public')));
 });
 
 // Routes
@@ -62,21 +62,25 @@ app.get('/deeplinks', function(req, res) {
 });
 
 app.get('/zalando', function(req, res) {
-  res.send('<!DOCTYPE html> ' +
-           '<html lang="en">' +
-           '<head>' +
-              '<title>zalando deeplinks</title>' +
-            '</head>' +
-            '<body>' +
-              '<h3>Category: <a href="zalando://ROOT/herren">Zalando herren</a></h3>' +
-              '<br />' +
-              '<h3>Product List: <a href="zalando://PRODLIST?query=Nike&filterColor=grau&order=popularity">Zalando Nike</a></h3>' +
-              '<br />' +
-              '<h3>Product: <a href="zalando://PDS?sku=c7712a00u-909">Calver ' +
-                'LIVINGSTONE - Business-Schnürer - nero anticato</a></h3>' +
-            '</body>' +
-            '</html>');
+  res.sendfile('public/zalando.html');
 });
+
+// app.get('/zalando', function(req, res) {
+//   res.send('<!DOCTYPE html> ' +
+//            '<html lang="en">' +
+//            '<head>' +
+//               '<title>zalando deeplinks</title>' +
+//             '</head>' +
+//             '<body>' +
+//               '<h3>Category: <a href="zalando://ROOT/herren">Zalando herren</a></h3>' +
+//               '<br />' +
+//               '<h3>Product List: <a href="zalando://PRODLIST?query=Nike&filterColor=grau&order=popularity">Zalando Nike</a></h3>' +
+//               '<br />' +
+//               '<h3>Product: <a href="zalando://PDS?sku=c7712a00u-909">Calver ' +
+//                 'LIVINGSTONE - Business-Schnürer - nero anticato</a></h3>' +
+//             '</body>' +
+//             '</html>');
+// });
 
 app.get('/getyourguide', function(req, res) {
   res.send('<!DOCTYPE html> ' +
