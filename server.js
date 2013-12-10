@@ -68,11 +68,11 @@ app.get('/zalando', function(req, res) {
               '<title>zalando deeplinks</title>' +
             '</head>' +
             '<body>' +
-              '<h3><a href="zalando://ROOT/damen">zalando damen</a></h3>' +
+              '<h3><a href="zalando://ROOT/damen">zalando dammen</a></h3>' +
               '<br />' +
-              '<h3><a href="zalando://PDS?sku=CO421D00N-301 ">Zalando product link</a></h3>' +
+              '<h3><a href="zalando://ROOT/damenbekleidung-jacken/">Zalando dammen jacken</a></h3>' +
               '<br />' +
-              '<h3><a href="http://deeplink.me/zalando.de/polo-ralph-lauren-slim-fit-poloshirt-heather-po222d05p-102.html">SLIM FIT - Poloshirt - heather</a></h3>' +
+              '<h3><a href="zalando://ROOT/khujo-senlin-winterjacke-black-kh121g02k-802">khujo SENLIN - Winterjacke - black</a></h3>' +
             '</body>' +
             '</html>');
 });
