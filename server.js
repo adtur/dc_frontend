@@ -68,11 +68,15 @@ app.get('/zalando', function(req, res) {
               '<title>zalando deeplinks</title>' +
             '</head>' +
             '<body>' +
-              '<h3><a href="zalando://ROOT/damen">zalando dammen</a></h3>' +
+              '<h3><a href="zalando://ROOT/damen">zalando damen</a></h3>' +
               '<br />' +
-              '<h3><a href="zalando://ROOT/damenbekleidung-jacken/">Zalando dammen jacken</a></h3>' +
+              '<h3><a href="zalando://ROOT/herren">Zalando herren</a></h3>' +
               '<br />' +
-              '<h3><a href="zalando://ROOT/khujo-senlin-winterjacke-black-kh121g02k-802">khujo SENLIN - Winterjacke - black</a></h3>' +
+              '<h3><a href="zalando://ROOT/kinder">Zalando kinder</a></h3>' +
+              '<br />' +
+              '<h3><a href="zalando://ROOT/home">Zalando home</a></h3>' +
+              '<br />' +
+              '<h3><a href="zalando://PRODLIST?query=Nike&filterColor=grau&order=popularity">Zalando Nike</a></h3>' +
             '</body>' +
             '</html>');
 });
