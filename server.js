@@ -68,18 +68,12 @@ app.get('/zalando', function(req, res) {
               '<title>zalando deeplinks</title>' +
             '</head>' +
             '<body>' +
-              '<h3><a href="zalando://ROOT/damen">zalando damen</a></h3>' +
+              '<h3>Category: <a href="zalando://ROOT/herren">Zalando herren</a></h3>' +
               '<br />' +
-              '<h3><a href="zalando://ROOT/herren">Zalando herren</a></h3>' +
+              '<h3>Product List: <a href="zalando://PRODLIST?query=Nike&filterColor=grau&order=popularity">Zalando Nike</a></h3>' +
               '<br />' +
-              '<h3><a href="zalando://ROOT/kinder">Zalando kinder</a></h3>' +
-              '<br />' +
-              '<h3><a href="zalando://ROOT/home">Zalando home</a></h3>' +
-              '<br />' +
-              '<h3><a href="zalando://PRODLIST?query=Nike&filterColor=grau&order=popularity">Zalando Nike</a></h3>' +
-              '<br />' +
-              '<h3><a href="zalando://PDS?sku=c7712a00u-909">Calver
-LIVINGSTONE - Business-Schnürer - nero anticato</a></h3>' +
+              '<h3>Product: <a href="zalando://PDS?sku=c7712a00u-909">Calver ' +
+                'LIVINGSTONE - Business-Schnürer - nero anticato</a></h3>' +
             '</body>' +
             '</html>');
 });
