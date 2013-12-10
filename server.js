@@ -68,9 +68,9 @@ app.get('/zalando', function(req, res) {
               '<title>zalando deeplinks</title>' +
             '</head>' +
             '<body>' +
-              '<h3><a href="http://deeplink.me/zalando.de/lloyd-florenz-business-schnuerer-schwarz-ll112a053-802.html">FLORENZ - Business-Schnürer - schwarz</a></h3>' +
+              '<h3><a href="zalando://ROOT/damen">zalando damen</a></h3>' +
               '<br />' +
-              '<h3><a href="http://deeplink.me/zalando.de/hugo-heise-anzug-schwarz-hu722m002-802.html">HEISE - Anzug - schwarz</a></h3>' +
+              '<h3><a href="zalando://PDS?sku=CO421D00N-301 ">Zalando product link</a></h3>' +
               '<br />' +
               '<h3><a href="http://deeplink.me/zalando.de/polo-ralph-lauren-slim-fit-poloshirt-heather-po222d05p-102.html">SLIM FIT - Poloshirt - heather</a></h3>' +
             '</body>' +
