@@ -78,7 +78,8 @@ app.get('/zalando', function(req, res) {
               '<br />' +
               '<h3><a href="zalando://PRODLIST?query=Nike&filterColor=grau&order=popularity">Zalando Nike</a></h3>' +
               '<br />' +
-              '<h3><a href="zalando://PDS?sku=c7712a00u-909">Zalando Nike</a></h3>' +
+              '<h3><a href="zalando://PDS?sku=c7712a00u-909">Calver
+LIVINGSTONE - Business-Schnürer - nero anticato</a></h3>' +
             '</body>' +
             '</html>');
 });
