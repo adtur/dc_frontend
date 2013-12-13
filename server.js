@@ -6,7 +6,8 @@ var express = require('express'),
 
 var app = express();
 var nodemailer = require("nodemailer");
-var mailer = require("./lib/modules/mailer");
+var mailer     = require("./lib/modules/mailer");
+var deeplinks  = require("./lib/modules/deeplinks");
 
 // Controllers
 var api = require('./lib/controllers/api');
@@ -46,25 +47,11 @@ app.post('/contact', function(req, res) {
 });
 
 app.get('/deeplinks', function(req, res) {
-  res.send(deeplinks.sparqit);
+  res.send(deeplinks.sparqit());
 });
 
 app.get('/zalando', function(req, res) {
   res.sendfile('public/zalando.html');
-});
-
-app.get('/getyourguide', function(req, res) {
-  res.send('<!DOCTYPE html> ' +
-           '<html lang="en">' +
-           '<head>' +
-              '<title>Get Your Guide deeplinks</title>' +
-            '</head>' +
-            '<body>' +
-              '<h3><a href="http://sparq.it/44w/">sparq.it -- Dubai: Burj Khalifa Skyscraper Entrance Ticket</a></h3>' +
-              '<br />' +
-              '<h3><a href="http://deeplink.me/getyourguide.com/dubai-l173/dubai-skyscraper-burj-khalifa-entrance-ticket-t25873/">deeplink.mde -- Dubai: Burj Khalifa Skyscraper Entrance Ticket</a></h3>' +
-            '</body>' +
-            '</html>');
 });
 
 // Start server
