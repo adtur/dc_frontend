@@ -46,19 +46,7 @@ app.post('/contact', function(req, res) {
 });
 
 app.get('/deeplinks', function(req, res) {
-  res.send('<!DOCTYPE html> ' +
-           '<html lang="en">' +
-           '<head>' +
-              '<title>deeplink me kerel :P</title>' +
-            '</head>' +
-            '<body>' +
-              '<a href="http://sparq.it/1lm">ebay</a>' +
-              '<br />' +
-              '<a href="http://sparq.it/1xq">etsy</a>' +
-              '<br />' +
-              '<a href="http://sparq.it/392">tumblr</a>' +
-            '</body>' +
-            '</html>');
+  res.send(deeplinks.sparqit);
 });
 
 app.get('/zalando', function(req, res) {
