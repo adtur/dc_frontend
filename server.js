@@ -6,7 +6,8 @@ var express = require('express'),
 
 var app = express();
 var nodemailer = require("nodemailer");
-var mailer = require("./lib/modules/mailer");
+var mailer     = require("./lib/modules/mailer");
+var deeplinks  = require("./lib/modules/deeplinks");
 
 // Controllers
 var api = require('./lib/controllers/api');
@@ -46,19 +47,7 @@ app.post('/contact', function(req, res) {
 });
 
 app.get('/deeplinks', function(req, res) {
-  res.send('<!DOCTYPE html> ' +
-           '<html lang="en">' +
-           '<head>' +
-              '<title>deeplink me kerel :P</title>' +
-            '</head>' +
-            '<body>' +
-              '<a href="http://sparq.it/1lm">ebay</a>' +
-              '<br />' +
-              '<a href="http://sparq.it/1xq">etsy</a>' +
-              '<br />' +
-              '<a href="http://sparq.it/392">tumblr</a>' +
-            '</body>' +
-            '</html>');
+  res.send(deeplinks.sparqit());
 });
 
 app.get('/zalando', function(req, res) {
