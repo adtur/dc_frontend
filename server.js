@@ -52,6 +52,10 @@ app.get('/zalando', function(req, res) {
   res.sendfile('public/zalando.html');
 });
 
+app.get('/new_campaign', function(req, res) {
+  res.sendfile('public/new_campaign.html');
+});
+
 // Start server
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
