@@ -32,8 +32,6 @@ app.configure('production', function(){
 });
 
 // Routes
-app.get('/api/awesomeThings', api.awesomeThings);
-
 app.post('/contact', function(req, res) {
   mailer.sendMail(
     nodemailer,
