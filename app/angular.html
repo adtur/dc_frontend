@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="scripts/angular_app.js"></script>  
+</head>
+<body ng-app>
+
+  <p> first angular expression {{ 1 + 2 }}
+
+  <br />
+  ----------------------------------------------------------------
+  <br />
+
+  Enter your name: <input type="text" ng-model="name" />
+  <p>Hello {{name | uppercase}}!</p>
+
+  <br />
+  ----------------------------------------------------------------
+  <br />
+
+  <div ng-controller="MyCtrl">
+    <button ng-click="toggle()">Toggle</button>
+    <p ng-show="isVisible()">Hello :p!</p>
+    <p>Debug scope: visible = {{visible}}</p>
+  </div>
+
+  <br />
+  ----------------------------------------------------------------
+  <br />
+
+
+  
+
+</body>
+</html>
