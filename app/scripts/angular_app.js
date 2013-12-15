@@ -29,5 +29,8 @@ function MyCtrl3($scope) {
     if($scope.name.length > 0) {
       $scope.greeting = "Greetings " + $scope.name;
     }
+    else {
+      $scope.greeting = "";
+    }
   });
 }
