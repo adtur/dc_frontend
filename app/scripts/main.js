@@ -2,7 +2,6 @@ $(document).ready(function() {
 
   // Add spin.js to lazy load container
   // History, and back button
-
   $(function() {
     jQuery.history.listen()
     $('.nav .scroll').click(function() {
@@ -98,8 +97,7 @@ $(document).ready(function() {
 
     });
 
-    // Change icons on accardion
-
+    // Change icons on accordion
     $('.collapse').on('show.bs.collapse', function() {
         $(this).parent().find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
         $(this).parent().find(".panel-heading").addClass("active");
@@ -117,4 +115,6 @@ $(document).ready(function() {
     $("#contact-form-button").click(function() {
         vex.dialog.alert("Your message has been send, you will hear from us very soon!");      
     });
+
+    $('.selectpicker').selectpicker();
 });

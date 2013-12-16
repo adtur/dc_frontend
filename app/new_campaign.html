@@ -8,9 +8,10 @@
   <meta name="author" content="prettystrap">
 
   <!-- build:css(.tmp) styles/main.css -->
-  <link id="the-story-css-file"href="styles/the-story.min.css" rel="stylesheet" media="screen">
+  <link id="the-story-css-file" href="styles/the-story.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="styles/vex.css">
   <link rel="stylesheet" href="styles/vex-theme-os.css">  
+  <link rel="stylesheet" href="styles/bootstrap-select.css">  
   <link rel="stylesheet" href="styles/dc-main.css">
   <!-- endbuild -->
 
@@ -53,30 +54,25 @@
   <!--  Campaign data page -->
   <div id="campaign" class="page color-4">
     <div class="inner-page">
-      <h3 class="page-headline">Campaign data</h3>
+      <h3 class="page-headline">Create a new campaign</h3>
     </div>
 
     <div class="row inner-page">
-      <div class="container" ng-view="ng-view-campaign">
-        <h3>first angular expression :) {{1+2}}</h3>
-      </div>
-    </div>
-
-    <div class="row inner-page">
-      <div class="col-md-6 lazy-container">
-        <img class="figurette lazy" src="images/pixel.png" data-original="images/mads.jpg" alt="Zombie ipsum" />
-      </div>
-      <div class="col-md-6">
-        <h3>Start using our service today</h3>
-        <p class="lead">We offer a full self-service solution or we can help you get the best from our solution.</p>
-        <ul class="list-wide">
-          <li><i class="fa fa-check"></i> Complete freedom in creative definition.</a>
-          </li>
-          <li><i class="fa fa-check"></i> Full control on creative generation.</li>
-          <li><i class="fa fa-check"></i> Customize the data schema your campaign will use.</li>
-          <li><i class="fa fa-check"></i> Use static file URLs, JSON or XML as your API format of choice.</li>
-          <li><i class="fa fa-check"></i> Start running your campaign immediately after setup.</li>          
-        </ul>
+      <div class="col-md-6 col-md-offset-3 text-center container">
+        <form>
+          <p>
+            <label for="campaign-name">Campaign name</label> 
+              <input type="text" name="campaign-name" id="campaign-name" placeholder="Your campaign's name" required>
+          </p>
+          <p>
+            <label>Available APIs 
+              <select class="selectpicker" id="available-apis">
+                <option value="url">File URL</option>
+                <option value="json">JSON</option>
+              </datalist>
+            </select>
+          </p>
+        </form>
       </div>
     </div>
 
@@ -209,6 +205,7 @@
   <script src="bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
   <script src="bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
   <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
+  <script src="scripts/bootstrap-select.js"></script>
   <!-- endbuild -->
 
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
