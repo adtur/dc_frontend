@@ -51,20 +51,184 @@
   </nav>
 
   <!--  Campaign data page -->
-  <div id="campaign" class="page color-4" ng-controller="">
+  <div id="campaign" class="page color-1" ng-controller="">
     <div class="inner-page">
-      campaign
-      <form>
-      </form>
+
+      <form id="form" class="form-horizontal">
+      <fieldset>
+      <legend>Campaign data</legend>
+
+      <div class="row inner-page">
+
+        <div class="control-group col-md-6">
+          <label class="control-label">Campaign</label>
+          <input id="campaign-name" type="text" placeholder="Your campaign's name" class="span4">
+          <span class="help-block">The name must uniquely identify the campaign.</span>
+        </div>
+
+        <div class="control-group col-md-6">
+          <label class="control-label">API Type</label>
+          <div class="controls">
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">File URL</a></li>
+              <li><a href="#">JSON</a></li>
+            </ul>
+          </div>            
+        </div>
+
+      </div>
+
+      <div class="row inner-page">
+        <div class="control-group col-md-6">
+          <label class="control-label">Add API Parameter</label>
+          <input id="new-api-param" type="text" placeholder="New api parameter" class="span3 ">
+          <span class="help-block">Add here the parameters that will be used to generate the creative.</span>
+        </div>
+
+        <div class="control-group col-md-6">
+          <label class="control-label">
+          </label>
+          <button id="add-api-param" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+
+      <div class="control-group col-md-6">
+        <div class="controls">
+          <button id="goodbuttonid" class="btn btn-success">idfa</button>
+          <button id="" class="btn btn-success">city</button>
+        </div>
+      </div>
+
+      </fieldset>
     </div>
   </div>
 
   <!--  Creative data page -->  
   <div id="creatives" class="page color-4">
-    creatives
     <div class="inner-page">
-      <form>
+
+      <form id="form" class="form-horizontal">
+      <fieldset>
+      <legend>Legend</legend>
+
+      <div class="control-group">
+        <label class="control-label">Select formats to use</label>
+        <div class="controls">
+          <select multiple="multiple" id="creative-formats">
+            <option value="Mobile leaderboard (320x50)">Mobile leaderboard (320x50)</option>
+            <option value="Large mobile banner (320x100)">Large mobile banner (320x100)</option>
+            <option value="Small square (200x200)">Small square (200x200)</option>
+            <option value="Square (250x250)">Square (250x250)</option>
+            <option value="Medium rectangle (300x250)">Medium rectangle (300x250)</option>
+            <option value="300x50">300x50</option>
+            <option value="216x36">216x36</option>
+            <option value="168x28">168x28</option>
+            <option value="192x53 - up to 5k (Japan standard size)">192x53 - up to 5k (Japan standard size)</option>
+            <option value="300x75">300x75</option>
+            <option value="216x54">216x54</option>
+            <option value="168x42">168x42</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">
+        </label>
+        <div class="controls">
+          <button id="add-template" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Selected formats</label>
+        <div class="controls">
+          <select multiple="multiple" id="selected-formats">
+            <option value="">
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Upload image</label>
+        <div class="controls">
+          <input id="upload-file" type="text" placeholder="Image file" class="span3 ">
+          <span class="help-block">Upload the images you will use in your creatives as logo and main image.</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">
+        </label>
+        <div class="controls">
+          <button id="upload-image" class="btn btn-primary">Upload</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Uploaded Images</label>
+        <div class="controls">
+          <select multiple="multiple" id="uploaded-images">
+            <option value="">
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Enter text</label>
+        <div class="controls">
+          <input id="enter-text" type="text" placeholder="Ad text" class="span3 ">
+          <span class="help-block">Write here the text you want to appear in the creative.</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Single Button</label>
+        <div class="controls">
+          <button id="singlebutton" class="btn">Button</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Available text strings</label>
+        <div class="controls">
+          <select multiple="multiple" id="uploaded-text-strings">
+            <option value="">
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Enter price</label>
+        <div class="controls">
+          <input id="enter-text" type="text" placeholder="Price text" class="span3 ">
+          <span class="help-block">Write here the price you want to appear in the creative.</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Single Button</label>
+        <div class="controls">
+          <button id="singlebutton" class="btn">Button</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">Available prices</label>
+        <div class="controls">
+          <select multiple="multiple" id="uploaded-text-strings">
+            <option value="">
+            </option>
+          </select>
+        </div>
+      </div>
+
+      </fieldset>
       </form>
+
+
     </div>
   </div>
 

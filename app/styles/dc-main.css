@@ -41,3 +41,10 @@ hr {
   font-size: 1.3em;
 }
 
+.nav-pills a {
+  color: #fff;
+}
+
+.nav-pills :not(.active) a {
+  border: #fff 1px solid;
+}
