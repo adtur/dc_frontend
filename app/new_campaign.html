@@ -262,13 +262,67 @@
     </div>
   </div>
 
-  <!--  Creative data page -->
-  <div id="rules" class="page color-4">
-    rules
+  <!--  Rules data page -->
+  <div id="campaign" class="page color-1" ng-controller="">
     <div class="inner-page">
-      <form>
-      </form>
-    </div>    
+
+      <form id="form" class="form-horizontal">
+      <fieldset>
+      <legend>Campaign data</legend>
+
+      <div class="row inner-page">
+
+        <div class="control-group col-md-2">
+          <label class="control-label">Campaign</label>
+        </div>
+        <div class="control-group col-md-5">
+          <input id="campaign-name" type="text" placeholder="Your campaign's name" class="span4">
+          <span class="help-block">The name must uniquely identify the campaign.</span>
+        </div>
+
+        <div class="control-group col-md-1">
+          <label class="control-label">API Type</label>
+        </div>
+        <div class="control-group col-md-4">
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#">File URL</a></li>
+            <li><a href="#">JSON</a></li>
+          </ul>
+        </div>            
+
+      </div>
+
+      <div class="row inner-page">
+
+        <div class="control-group col-md-2">
+          <label class="control-label">Add API Parameter</label>
+        </div>
+        <div class="control-group col-md-5">
+          <input id="new-api-param" type="text" placeholder="New api parameter" class="span3 ">
+          <span class="help-block">Add here the parameters that will be used to generate the creative.</span>
+        </div>
+
+        <div class="control-group col-md-2">
+          <label class="control-label">
+          </label>
+          <button id="add-api-param" class="btn btn-primary">Add</button>
+        </div>
+
+      </div>
+
+      <div class="row inner-page">
+
+        <div class="control-group col-md-12">
+          <div class="controls">
+            <button id="goodbuttonid" class="btn btn-success">idfa</button>
+            <button id="" class="btn btn-success">city</button>
+          </div>
+        </div>
+
+      </div>
+
+      </fieldset>
+    </div>
   </div>
 
   <!-- The footer, social media icons, and copyright -->
