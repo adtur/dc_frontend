@@ -54,24 +54,22 @@
   <!--  Campaign data page -->
   <div id="campaign" class="page color-4">
     <div class="inner-page">
-      <h3 class="page-headline">Create a new campaign</h3>
+      <h4 class="page-headline">Create a new campaign</h4>
     </div>
 
     <div class="row inner-page">
-      <div class="col-md-6 col-md-offset-3 text-center container">
+      <div class="col-md-10 col-md-offset-1 text-center container">
         <form>
           <p>
             <label for="campaign-name">Campaign name</label> 
               <input type="text" name="campaign-name" id="campaign-name" placeholder="Your campaign's name" required>
-          </p>
-          <p>
-            <label>Available APIs 
-              <select class="selectpicker" id="available-apis">
-                <option value="url">File URL</option>
-                <option value="json">JSON</option>
-              </datalist>
+            <label>Available APIs</label>
+            <select class="selectpicker" id="available-apis">
+              <option value="url">File URL</option>
+              <option value="json">JSON</option>
             </select>
           </p>
+          <p>Now you can add the parameters that will be part of the API. These parameters will also be used in the crative generation rules and the values you assign to them will affect the creative's appearance.</p>
         </form>
       </div>
     </div>
