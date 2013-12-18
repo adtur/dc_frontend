@@ -102,6 +102,7 @@
         <div class="control-group col-md-12">
           <div class="controls">
             <button id="goodbuttonid" class="btn btn-success">idfa</button>
+            <button id="goodbuttonid" class="btn btn-success">week day</button>            
             <button id="" class="btn btn-success">city</button>
           </div>
         </div>
@@ -287,51 +288,115 @@
       <fieldset>
       <legend>Targeting rules</legend>
 
-      <div class="row inner-page">
+      <div class="row param-cond-row">
 
         <div class="control-group col-md-2">
-          <label class="control-label">Campaign</label>
+          <label class="control-label">When</label>
+          <button id="" class="btn btn-success">city</button>
+        </div>
+        <div class="control-group col-md-6">
+          <label class="control-label">equals to </label>
+          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+        </div>
+
+      </div>
+
+      <div class="row param-cond-row">
+
+        <div class="control-group col-md-2">
+          <label class="control-label">When</label>
+          <button id="" class="btn btn-success">week day</button>
+        </div>
+        <div class="control-group col-md-6">
+          <label class="control-label">equals to </label>
+          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+        </div>
+
+      </div>
+
+      <div class="row param-cond-row">
+
+        <div class="control-group col-md-2">
+          <label class="control-label">When</label>
+          <button id="" class="btn btn-success">idfa</button>
+        </div>
+        <div class="control-group col-md-6">
+          <label class="control-label">equals to </label>
+          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+        </div>
+
+      </div>
+
+      <hr><br />
+
+      <div class="row param-cond-row">
+
+        <div class="control-group col-md-2">
+          <label class="control-label">Then</label>
+          <button id="" class="btn btn-success">logo</button>
+        </div>
+        <div class="control-group col-md-6">
+          <label class="control-label">will be </label>
+          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+        </div>
+
+      </div>
+
+      <div class="row param-cond-row">
+
+        <div class="control-group col-md-2">
+          <label class="control-label">Then</label>
+          <button id="" class="btn btn-success">image</button>
+        </div>
+        <div class="control-group col-md-6">
+          <label class="control-label">will be </label>
+          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+        </div>
+
+      </div>
+
+      <div class="row param-cond-row">
+
+        <div class="control-group col-md-2">
+          <label class="control-label">Then</label>          
+          <button id="" class="btn btn-success">price</button>
+        </div>
+        <div class="control-group col-md-6">
+          <label class="control-label">will be </label>
+          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+        </div>
+
+      </div>
+
+      <div class="row param-cond-row">
+
+        <div class="control-group col-md-2">
+          <label class="control-label">Then</label>
+          <button id="" class="btn btn-success">text</button>
+        </div>
+        <div class="control-group col-md-6">
+          <label class="control-label">will be </label>
+          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="row inner-page">
+
+        <div class="control-group col-md-3">
+          <label class="control-label">Save targeting rule</label>
         </div>
         <div class="control-group col-md-5">
-          <input id="campaign-name" type="text" placeholder="Your campaign's name" class="span4">
-          <span class="help-block">The name must uniquely identify the campaign.</span>
+          <div class="controls">
+            <input id="enter-text" type="text" placeholder="Targeting rule name" class="col-xs-12">
+            <span class="help-block">Enter a description for the targeting rule.</span>
+          </div>
         </div>
 
         <div class="control-group col-md-1">
-          <label class="control-label">API Type</label>
-        </div>
-        <div class="control-group col-md-4">
-          <ul class="nav nav-pills">
-            <li class="active"><a href="#">File URL</a></li>
-            <li><a href="#">JSON</a></li>
-          </ul>
-        </div>            
-
-      </div>
-
-      <div class="row inner-page">
-
-        <div class="control-group col-md-2">
-          <label class="control-label">Add API Parameter</label>
-        </div>
-        <div class="control-group col-md-5">
-          <input id="new-api-param" type="text" placeholder="New api parameter" class="span3 ">
-          <span class="help-block">Add here the parameters that will be used to generate the creative.</span>
-        </div>
-
-        <div class="control-group col-md-2">
-          <button id="add-api-param" class="btn btn-primary">Add</button>
-        </div>
-
-      </div>
-
-      <div class="row inner-page">
-
-        <div class="control-group col-md-12">
-          <div class="controls">
-            <button id="goodbuttonid" class="btn btn-success">idfa</button>
-            <button id="" class="btn btn-success">city</button>
-          </div>
+          <button id="upload-image" class="btn btn-success">Save</button>
         </div>
 
       </div>
