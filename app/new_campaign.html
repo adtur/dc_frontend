@@ -11,6 +11,7 @@
   <link id="the-story-css-file" href="styles/the-story.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="styles/vex.css">
   <link rel="stylesheet" href="styles/vex-theme-os.css">  
+  <link rel="stylesheet" href="styles/bootstrap-select.css">
   <link rel="stylesheet" href="styles/dc-main.css">
   <!-- endbuild -->
 
@@ -101,7 +102,7 @@
 
         <div class="control-group col-md-12">
           <div class="controls">
-            <button id="goodbuttonid" class="btn btn-success">idfa</button>
+            <button id="goodbuttonid" class="btn btn-success">gender</button>
             <button id="goodbuttonid" class="btn btn-success">week day</button>            
             <button id="" class="btn btn-success">city</button>
           </div>
@@ -318,7 +319,7 @@
 
         <div class="control-group col-md-2">
           <label class="control-label">When</label>
-          <button id="" class="btn btn-success">idfa</button>
+          <button id="" class="btn btn-success">gender</button>
         </div>
         <div class="control-group col-md-6">
           <label class="control-label">equals to </label>
@@ -337,7 +338,11 @@
         </div>
         <div class="control-group col-md-6">
           <label class="control-label">will be </label>
-          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+          <select class="selectpicker">
+            <option>image 1</option>
+            <option>image 2</option>
+            <option>image 3</option>
+          </select>
         </div>
 
       </div>
@@ -350,7 +355,11 @@
         </div>
         <div class="control-group col-md-6">
           <label class="control-label">will be </label>
-          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+          <select class="selectpicker">
+            <option>image 3</option>
+            <option>image 2</option>
+            <option>image 1</option>
+          </select>
         </div>
 
       </div>
@@ -363,7 +372,11 @@
         </div>
         <div class="control-group col-md-6">
           <label class="control-label">will be </label>
-          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+          <select class="selectpicker">
+            <option>paper</option>
+            <option>seashells</option>
+            <option>bitcoins</option>
+          </select>
         </div>
 
       </div>
@@ -376,7 +389,11 @@
         </div>
         <div class="control-group col-md-6">
           <label class="control-label">will be </label>
-          <input id="campaign-name" type="text" placeholder="parameter value" class="span4">
+          <select class="selectpicker">
+            <option>Mustard</option>
+            <option>Ketchup</option>
+            <option>Relish</option>
+          </select>
         </div>
 
       </div>
@@ -473,6 +490,7 @@
   <script src="bower_components/bootstrap-sass/js/bootstrap-carousel.js"></script>
   <script src="bower_components/bootstrap-sass/js/bootstrap-scrollspy.js"></script>
   <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
+  <script src="scripts/bootstrap-select.js"></script>
   <!-- endbuild -->
 
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
