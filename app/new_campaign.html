@@ -43,7 +43,7 @@
             <li><a title="Campaign data" class="scroll brand-1" href="#campaign">Campaign</a></li>
             <li><a title="Configure your creative" href="#creatives" class="scroll brand-4">Creatives</a></li>
             <li><a title="Creative generation rules" href="#rules" class="scroll brand-1">Rules</a></li>
-            <li><a title="Launch campaign" href="#launch" class="scroll brand-4">Launch Campaign</a></li>         
+            <li><a title="Launch campaign" href="#launch" class="scroll brand-4">Launch Campaign</a></li>        
         </ul>
       </div>
       <!-- /.nav -->
@@ -65,7 +65,7 @@
           <label class="control-label">Campaign</label>
         </div>
         <div class="control-group col-md-5">
-          <input id="campaign-name" type="text" placeholder="Your campaign's name" class="span4">
+          <input id="campaign-name" type="text" placeholder="Your campaign's name" class="col-xs-12">
           <span class="help-block">The name must uniquely identify the campaign.</span>
         </div>
 
@@ -87,13 +87,11 @@
           <label class="control-label">Add API Parameter</label>
         </div>
         <div class="control-group col-md-5">
-          <input id="new-api-param" type="text" placeholder="New api parameter" class="span3 ">
+          <input id="new-api-param" type="text" placeholder="New api parameter" class="col-xs-12">
           <span class="help-block">Add here the parameters that will be used to generate the creative.</span>
         </div>
 
         <div class="control-group col-md-2">
-          <label class="control-label">
-          </label>
           <button id="add-api-param" class="btn btn-primary">Add</button>
         </div>
 
@@ -156,7 +154,7 @@
           <label class="control-label">Selected formats</label>
         </div>
         <div class="control-group col-md-6">
-          <select multiple="multiple" id="selected-formats">
+          <select multiple="multiple" id="selected-formats" class="col-xs-7">
             <option value="">
             </option>
           </select>
@@ -170,7 +168,7 @@
           <label class="control-label">Upload image</label>
         </div>
         <div class="control-group col-md-5">        
-          <input id="upload-file" type="text" placeholder="Image file" class="span3 ">
+          <input id="upload-file" type="text" placeholder="Image file">
           <span class="help-block">Upload the images you will use in your creatives as logo and main image.</span>
         </div>
 
@@ -186,7 +184,7 @@
           <label class="control-label">Uploaded Images</label>
         </div>
         <div class="control-group col-md-6">
-          <select multiple="multiple" id="uploaded-images">
+          <select multiple="multiple" id="uploaded-images" class="col-xs-7">
             <option value="">
             </option>
           </select>
@@ -216,7 +214,7 @@
           <label class="control-label">Available text strings</label>
         </div>
         <div class="control-group col-md-5">
-          <select multiple="multiple" id="uploaded-text-strings">
+          <select multiple="multiple" id="uploaded-text-strings" class="col-xs-8">
             <option value="">
             </option>
           </select>
@@ -248,7 +246,7 @@
           <label class="control-label">Available text strings</label>
         </div>
         <div class="control-group col-md-5">
-          <select multiple="multiple" id="uploaded-text-strings">
+          <select multiple="multiple" id="uploaded-text-strings" class="col-xs-8">
             <option value="">
             </option>
           </select>
@@ -269,7 +267,7 @@
 
       <form id="form" class="form-horizontal">
       <fieldset>
-      <legend>Campaign data</legend>
+      <legend>Targeting rules</legend>
 
       <div class="row inner-page">
 
