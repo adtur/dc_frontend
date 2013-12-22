@@ -52,6 +52,8 @@
     <!-- /.inner-page -->
   </nav>
 
+  <div ng-controller="newCampaignController">
+
   <!--  Campaign data page -->
   <div id="campaign" class="page color-1" ng-controller="">
     <div class="inner-page">
@@ -66,7 +68,7 @@
           <label class="control-label">Campaign</label>
         </div>
         <div class="control-group col-md-5">
-          <input id="campaign-name" type="text" placeholder="Your campaign's name" class="col-xs-12">
+          <input id="campaign-name" type="text" placeholder="Your campaign's name" class="col-xs-12" ng-model="campaign.name">
           <span class="help-block">The name must uniquely identify the campaign.</span>
         </div>
 
@@ -454,6 +456,8 @@
 
         </div>
 
+        </div> <!--end of newCampaignController -->
+
         <hr><br />
 
         <div class="row inner-page">
@@ -526,6 +530,7 @@
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/newCampaignController.js"></script>
   <!-- UI configuration -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
